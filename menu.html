@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Menu | Tako BBQ</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/magnific-popup.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<script src="js/jquery.magnific-popup.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function() {
+			$('.popup-gallery').magnificPopup({
+				delegate: 'a',
+				type: 'image',
+				tLoading: 'Loading image #%curr%...',
+				mainClass: 'mfp-img-mobile',
+				gallery: {
+					enabled: true,
+					navigateByImgClick: true,
+					preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+		},
+		image: {
+			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+			titleSrc: function(item) {
+				return item.el.attr('title') + '';
+			}
+		}
+	});
+});
+	</script>
+    </head>
+<body>
+<div class="navbar-wrapper">
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <a class="navbar-brand" href="index.html">
+                <img src="img/takobbq-logo.jpg" alt="Tako BBQ logo">
+          </a>
+          <ul class="nav navbar-nav pull-right">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="catering-contact.html">Catering/Contact</a></li>
+            <li class="active"><a href="menu.html">Menu<span class="sr-only">(current)</span></a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Choice of Meat:</h2>
+                <ul class="list-unstyled">
+                    <li>Shortrib (Kalbi)</li>
+                    <li>Ribeye (Bulgogi)</li>
+                    <li>Spicy Pork</li>
+                    <li>Spicy Chicken</li>
+                    <li>Spicy Spam</li>
+                    <li>Eggplant</li>
+                    <li>Tofu</li>
+                </ul>
+        </div>
+        <div class="col-md-6">
+            <h2>Items (Don't forgot to choose your meat!):</h2>
+                <ul class="list-unstyled">
+                    <li>Taco $2</li>
+                    <li>Burrito $6</li>
+                    <li>Rice Bowl $7</li>
+                    <li>Quesadilla $6</li>
+                    <li>Korta Sandwich (our version of the Torta) $6</li>
+                </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Specials (our very own specials that you won't find anywhere in the Central Valley):</h2>
+                <ul class="list-unstyled">
+                    <li>Korean Phily (our version of the Phily Cheesesteak) $7</li>
+                    <li>taKodog (hotdog w/ spicy pork) $6</li>
+                    <li>Gogi Burger (our version of a cheeseburger) $6</li>
+                    <li>Quesadilla $6</li>
+                    <li>Kimchi Quesadilla $6</li>
+                </ul>
+        </div>
+        <div class="col-md-6">
+            <div class="popup-gallery">
+                <a href="img/tacotruck.jpg" title="Taco truck stop"><img src="img/tacotruck.jpg" height="75" width="75"></a>
+                <a href="img/people-eating.jpg" title="Customers enjoying our food"><img src="img/people-eating.jpg" height="75" width="75"></a>
+                <a href="img/eating-at-night.jpg" title="Open every hour of the day"><img src="img/eating-at-night.jpg" height="75" width="75"></a>
+                <a href="img/order-in.jpg" title="We're taking orders"><img src="img/order-in.jpg" height="75" width="75"></a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p>© 2014 Tako BBQ</p>
+        </div>
+    </div>
+</div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    </body>
+</html>
